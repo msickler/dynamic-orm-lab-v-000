@@ -20,19 +20,19 @@ class InteractiveRecord
 
   def self.column_names each do |column_name|
     attr_accessor column_name.to_sym
-  end 
+  end
 
-  def initialize(options = {}) 
+  def initialize(options = {})
     options.each do |property, value|
       self.send("#{property}=", value)
     end
-  end 
+  end
 
   def table_name_for_insert
-    self.class.table_name 
-  end 
+    self.class.table_name
+  end
 
-  
+
 
 
 
