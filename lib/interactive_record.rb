@@ -19,7 +19,7 @@ class InteractiveRecord
   end
 
   def self.column_names each do |column_name|
-    attr_accessor column_name.to_sym
+    attr_accessor column_name
   end
   end
 
