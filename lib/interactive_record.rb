@@ -18,10 +18,7 @@ class InteractiveRecord
     column_names.compact
   end
 
-  def self.column_names each do |column_name|
-    attr_accessor column_name
-  end
-  end
+
 
   def initialize(options = {})
     options.each do |property, value|
